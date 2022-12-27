@@ -118,7 +118,7 @@ class NumatoUsbGpio:
         self._edge = [None] * self.ports
         try:
             _ = self.id
-            _ = self.ver
+            #_ = self.ver
             self.iodir = self._MASK_ALL_PORTS  # resets iomask as well
             self.notify = False
         except NumatoGpioError as err:
