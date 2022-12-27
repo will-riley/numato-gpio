@@ -104,7 +104,7 @@ class NumatoUsbGpio:
         self.dev_file = device
         self._state = 0
         self._buf = ""
-        self._poll_thread = threading.Thread(target=self._poll, daemon=True)
+        self._poll_thread = threading.Thread(target=self._poll, daemon=False)
         self._rw_lock = threading.RLock()
         self._can_read = threading.Condition()
         self._ser = serial.Serial(self.dev_file, 19200, timeout=1)
