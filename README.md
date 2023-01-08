@@ -1,3 +1,7 @@
+## Modified from upstream to make notify with callbacks work on a USB 16ch GPIO card.
+ * Upstream version check is broken with new firmware. Bypassed.
+ * Upstream discover doesn't seem to work either.
+
 ![Upload Python Package](https://github.com/clssn/numato-gpio/workflows/Upload%20Python%20Package/badge.svg)
 ![Tests](https://github.com/clssn/numato-gpio/workflows/Tests/badge.svg)
 
