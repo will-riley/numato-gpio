@@ -495,6 +495,7 @@ class NumatoUsbGpio:
         the serial connection is closed or an exception is caught while
         reading.
         """
+        self._ser.timeout = None
         try:
             self._q = ""
             while self._ser and self._ser.is_open:
